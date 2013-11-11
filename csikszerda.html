@@ -1,0 +1,93 @@
+<head>
+  <title>csikszerda</title>
+</head>
+
+<body>
+    {{> voicesList}}
+</body>
+
+<template name="voicesList">
+    <table class="table voices">
+        <tr>
+            {{#each ccc_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each hh_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each aa_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each gg_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each ff_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each ee_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each dd_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each cc_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each h_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each a_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each g_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each f_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each e_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each d_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+        <tr>
+            {{#each c_voices}}
+            {{> voiceItem}}
+            {{/each}}
+        </tr>
+    </table>
+</template>
+
+<template name="voiceItem">
+    <td class="voice {{active}}">
+        <h3>{{alt}}<span>{{serial}}</span></h3>
+    </td>
+</template>
