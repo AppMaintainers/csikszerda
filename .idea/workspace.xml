@@ -4,7 +4,7 @@
     <list default="true" id="831c420f-0555-448e-93ac-2f67f479633a" name="Default" comment="" />
     <ignored path="csikszerda.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/csikszerda.js" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384213160357" ignored="false" />
+    <file path="/csikszerda.js" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384213972427" ignored="false" />
     <file path="/csikszerda.html" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384212261176" ignored="false" />
     <file path="/csikszerda.css" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384211433975" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,7 +47,7 @@
       <file leaf-file-name="csikszerda.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csikszerda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="34" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.50199205">
+            <state line="51" column="28" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.40239045">
               <folding />
             </state>
           </provider>
@@ -259,7 +259,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csikszerda.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="34" selection-start="1756" selection-end="1756" vertical-scroll-proportion="0.50199205">
+        <state line="51" column="28" selection-start="1615" selection-end="1615" vertical-scroll-proportion="0.40239045">
           <folding />
         </state>
       </provider>

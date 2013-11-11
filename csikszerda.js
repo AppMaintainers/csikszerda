@@ -49,12 +49,15 @@ if (Meteor.isClient) {
   });
 
   function playSound(){
-    setTimeout(playSound, 1000);
+    setTimeout(playSound, 500);
 
     if ($($('#main-tones td')[actual_tone]).hasClass('true'))
     {
-      console.log(actual_tone);
-      soundManager.play('c');
+      soundManager.play('c',{from: 0, to: 100});
+    }
+    else
+    {
+      soundManager.stop();
     }
     $('#main-tones td.actual').removeClass('actual');
     $($('#main-tones td')[actual_tone]).addClass('actual');
