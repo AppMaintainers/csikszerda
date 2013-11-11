@@ -2,3 +2,6 @@
 td.true{
     background: red;
 }
+td.actual{
+    text-decoration: underline;
+}

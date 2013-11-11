@@ -32,6 +32,31 @@ if (Meteor.isClient) {
       }
     }
   });
+
+  soundManager.setup({
+    preferFlash: false,
+    onready: function() {
+
+    }
+  });
+
+  actual_tone = 0;
+
+  function playSound(){
+    setTimeout(playSound, 2000);
+
+    if ($($('#main-tones td')[actual_tone]).hasClass('true'))
+    {
+      var cSound = soundManager.createSound({ url: '/bass.mp3' }).play();
+      //cSound.play();
+    }
+    $('#main-tones td.actual').removeClass('actual');
+    $($('#main-tones td')[actual_tone]).addClass('actual');
+    actual_tone++;
+    if (actual_tone == 16) actual_tone = 0;
+  }
+
+  playSound();
 }
 
 if (Meteor.isServer) {
