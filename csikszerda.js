@@ -38,18 +38,23 @@ if (Meteor.isClient) {
   soundManager.setup({
     preferFlash: false,
     onready: function() {
-      cSound = soundManager.createSound({ url: '/bass.mp3' });
+      soundManager.createSound({
+        id: 'c',
+        url: '/bass.mp3',
+        autoLoad: true,
+        whileloading: function() {
+        }
+      });
     }
   });
 
   function playSound(){
-    setTimeout(playSound, 2000);
+    setTimeout(playSound, 1000);
 
     if ($($('#main-tones td')[actual_tone]).hasClass('true'))
     {
       console.log(actual_tone);
-      cSound.play();
-      //cSound.play();
+      soundManager.play('c');
     }
     $('#main-tones td.actual').removeClass('actual');
     $($('#main-tones td')[actual_tone]).addClass('actual');
