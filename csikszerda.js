@@ -20,7 +20,7 @@ if (Meteor.isClient) {
   });
 
   Template.voiceItem.events({
-    'click h3': function(e) {
+    'click td': function(e) {
       e.preventDefault();
 
       if (this.active == true){
@@ -33,21 +33,22 @@ if (Meteor.isClient) {
     }
   });
 
+  actual_tone = 0;
+
   soundManager.setup({
     preferFlash: false,
     onready: function() {
-
+      cSound = soundManager.createSound({ url: '/bass.mp3' });
     }
   });
-
-  actual_tone = 0;
 
   function playSound(){
     setTimeout(playSound, 2000);
 
     if ($($('#main-tones td')[actual_tone]).hasClass('true'))
     {
-      var cSound = soundManager.createSound({ url: '/bass.mp3' }).play();
+      console.log(actual_tone);
+      cSound.play();
       //cSound.play();
     }
     $('#main-tones td.actual').removeClass('actual');
