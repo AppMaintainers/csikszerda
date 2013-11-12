@@ -5,7 +5,7 @@
     <ignored path="csikszerda.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/csikszerda.js" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384248269914" ignored="false" />
-    <file path="/csikszerda.html" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384247180369" ignored="false" />
+    <file path="/csikszerda.html" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384250035925" ignored="false" />
     <file path="/csikszerda.css" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384211433975" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/programs/client/app/client/soundmanager2-jsmin.js" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384247098319" ignored="false" />
     <file path="$PROJECT_DIR$/.meteor/local/build/programs/server/packages/livedata.js" changelist="831c420f-0555-448e-93ac-2f67f479633a" time="1384247098319" ignored="false" />
@@ -32,7 +32,7 @@
       <file leaf-file-name="csikszerda.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/csikszerda.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="36" selection-start="181" selection-end="181" vertical-scroll-proportion="4.0">
+            <state line="27" column="42" selection-start="618" selection-end="618" vertical-scroll-proportion="-16.875">
               <folding />
             </state>
           </provider>
@@ -59,7 +59,7 @@
       <file leaf-file-name="csikszerda.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/csikszerda.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.35856575">
+            <state line="78" column="44" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.32270917">
               <folding />
             </state>
           </provider>
@@ -76,8 +76,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/csikszerda.css" />
-        <option value="$PROJECT_DIR$/csikszerda.html" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/csikszerda.html" />
         <option value="$PROJECT_DIR$/csikszerda.js" />
       </list>
     </option>
@@ -301,14 +301,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/csikszerda.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="36" selection-start="181" selection-end="181" vertical-scroll-proportion="4.0">
+        <state line="27" column="42" selection-start="618" selection-end="618" vertical-scroll-proportion="-16.875">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/csikszerda.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="36" selection-start="1582" selection-end="1582" vertical-scroll-proportion="0.35856575">
+        <state line="78" column="44" selection-start="2554" selection-end="2554" vertical-scroll-proportion="0.32270917">
           <folding />
         </state>
       </provider>

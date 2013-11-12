@@ -76,7 +76,7 @@ if (Meteor.isClient) {
     for(var i=0;i<8;i++){
       if ($($($("tr")[i]).children('td')[actual_tone]).hasClass('true'))
       {
-        soundManager.play(Tones[i],{from: 0, to: 300, multiShotEvents: true });
+        soundManager.play(Tones[i],{from: 0, multiShotEvents: true });
       }
     }
 
