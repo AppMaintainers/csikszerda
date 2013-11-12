@@ -1,4 +1,5 @@
 Voices = new Meteor.Collection('voices');
+Tones = ['c','d','e','f','g','a','h','cc','dd','ee','ff','gg','aa','hh','ccc'];
 
 if (Meteor.isClient) {
   Template.voicesList.helpers({
@@ -36,46 +37,64 @@ if (Meteor.isClient) {
   actual_tone = 0;
 
   soundManager.setup({
-    preferFlash: false,
+    url: '/swf/',
+    flashVersion: 9,
+    preferFlash: true,
     onready: function() {
       soundManager.createSound({
-        id: 'c',
-        url: '/bass.mp3',
-        autoLoad: true,
-        whileloading: function() {
-        }
+        id: 'cc', url: '/background2.mp3', autoLoad: true
       });
+      soundManager.createSound({
+        id: 'h', url: '/background1.mp3', autoLoad: true
+      });
+      soundManager.createSound({
+        id: 'a', url: '/background0.mp3', autoLoad: true
+      });
+      soundManager.createSound({
+        id: 'g', url: '/mouseover2.mp3', autoLoad: true
+      });
+      soundManager.createSound({
+        id: 'f', url: '/mouseover.mp3', autoLoad: true
+      });
+      soundManager.createSound({
+        id: 'e', url: '/button-1.mp3', autoLoad: true
+      });
+      soundManager.createSound({
+        id: 'd', url: '/button-0.mp3', autoLoad: true
+      });
+      soundManager.createSound({
+        id: 'c', url: '/bass.mp3', autoLoad: true
+      });
+
+      setTimeout(playSound, 200);
     }
   });
 
   function playSound(){
     setTimeout(playSound, 500);
 
-    if ($($('#main-tones td')[actual_tone]).hasClass('true'))
-    {
-      soundManager.play('c',{from: 0, to: 100});
+    for(var i=0;i<8;i++){
+      if ($($($("tr")[i]).children('td')[actual_tone]).hasClass('true'))
+      {
+        soundManager.play(Tones[i],{from: 0, to: 300, multiShotEvents: true });
+      }
     }
-    else
-    {
-      soundManager.stop();
-    }
+
     $('#main-tones td.actual').removeClass('actual');
     $($('#main-tones td')[actual_tone]).addClass('actual');
     actual_tone++;
-    if (actual_tone == 16) actual_tone = 0;
+    if (actual_tone == 8) actual_tone = 0;
   }
-
-  playSound();
 }
 
 if (Meteor.isServer) {
   Meteor.startup(function () {
 
     if (Voices.find().count() === 0) {
-      for(var i=0;i<16;i++){
-        for(var e=0;e<15;e++){
+      for(var i=0;i<8;i++){
+        for(var e=0;e<8;e++){
           Voices.insert({
-            alt: ['c','d','e','f','g','a','h','cc','dd','ee','ff','gg','aa','hh','ccc'][e],
+            alt: Tones[e],
             serial: i,
             active: false
           });
